@@ -7,8 +7,6 @@ dubbo_registry="/Users/imac/linjiahaoyi_web_new/dubbo-registry/target"
 projcet_names=("dubbo-registry" "base-center" "user-center" "sec-center" "order-center" "prod-center")
 
 jps |grep NAPSHOT |awk '{print $1}'|xargs kill -9
-
-
 unzip -o -d  "${dubbo_registry}/startSh"    "${dubbo_registry}/*.zip"
 cp  ${dubbo_registry}/*.jar		${dubbo_registry}/startSh/*/
 
@@ -24,8 +22,5 @@ for file in ${projcet_names[@]:1};
 	
 done
 
-# sleep 10
-echo $start_jar_sh > start_jar_sh.sh
 
-sh start_jar_sh.sh
-# $start_jar_sh
+eval $start_jar_sh  #  使用 eval $函数进行二次扫描 解决直接执行找不到class类的情况
