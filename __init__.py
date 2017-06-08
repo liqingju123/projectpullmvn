@@ -17,9 +17,9 @@ def start_server(root_dir, dubbo_registry, project_name):
     os.system(' unzip -o -d   %s/startSh    %s/%s' % (path_str, path_str, '*.zip'))
     os.system(' cp   %s/*.jar  %s/startSh/*/' % (path_str, path_str))
     if (project_name == 'dubbo-registry'):
-        return ' java -jar    %s/startSh/*/%s*SNAPSHOT.jar' % (path_str, project_name)
+        return ' java -jar    %s/startSh/*/%s*SNAPSHOT.jar  > /dev/null ' % (path_str, project_name)
     else:
-        return 'java -jar    %s/startSh/*/%s-core*.jar' % (path_str, project_name)
+        return 'java -jar    %s/startSh/*/%s-core*.jar ' % (path_str, project_name)
 
 def start_java_project():
     list_dirs = ['dubbo-registry', 'base-center', 'user-center', 'sec-center', 'order-center', 'prod-center']

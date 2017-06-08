@@ -11,7 +11,7 @@ unzip -o -d  "${dubbo_registry}/startSh"    "${dubbo_registry}/*.zip"
 cp  ${dubbo_registry}/*.jar		${dubbo_registry}/startSh/*/
 
 
-start_jar_sh="java  -jar ${dubbo_registry}/startSh/*/${projcet_names[0]}*SNAPSHOT.jar "
+start_jar_sh="java  -jar ${dubbo_registry}/startSh/*/${projcet_names[0]}*SNAPSHOT.jar  > /dev/null"
 
 for file in ${projcet_names[@]:1};
 	do
