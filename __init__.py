@@ -22,7 +22,7 @@ def start_server(root_dir, dubbo_registry, project_name):
         return 'java -jar    %s/startSh/*/%s-core*.jar ' % (path_str, project_name)
 
 def start_java_project():
-    list_dirs = ['dubbo-registry', 'base-center', 'user-center', 'sec-center', 'order-center', 'prod-center']
+    list_dirs = ['dubbo-registry', 'base-center', 'user-center', 'sec-center', 'order-center', 'prod-center','wechat-center']
     root_dir = '/Users/imac/linjiahaoyi_web_new/%s/%s-core/target'
     dubbo_registry = '/Users/imac/linjiahaoyi_web_new/dubbo-registry/target'
     start_str = ''

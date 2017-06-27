@@ -4,7 +4,7 @@ root_path="/Users/imac/linjiahaoyi_web_new/${file}/${file}-core/target"
 
 dubbo_registry="/Users/imac/linjiahaoyi_web_new/dubbo-registry/target"
 
-projcet_names=("dubbo-registry" "base-center" "user-center" "sec-center" "order-center" "prod-center")
+projcet_names=("dubbo-registry" "base-center" "user-center" "sec-center" "order-center" "prod-center" "wechat-center")
 
 jps |grep NAPSHOT |awk '{print $1}'|xargs kill -9
 unzip -o -d  "${dubbo_registry}/startSh"    "${dubbo_registry}/*.zip"

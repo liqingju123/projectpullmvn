@@ -13,7 +13,7 @@ Already up-to-date
 import os
 import threading
 
-list_dirs = ['common-parent','dubbo-registry', 'base-center', 'user-center', 'sec-center', 'order-center', 'prod-center','crm-parent','clinic-busi','cache-busi']
+list_dirs = ['common-parent','dubbo-registry', 'base-center', 'user-center', 'sec-center', 'order-center', 'prod-center','crm-parent','clinic-busi','cache-busi','wechat-center','wechat-busi']
 root_path ='/Users/imac/linjiahaoyi_web_new/';
 
 
